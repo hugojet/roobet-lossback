@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="ogTitle ogDesc">
-  <title id="ogTitle">Roobet Lossback - Up to 20% weekly cashback</title>
-  <desc id="ogDesc">Exclusive VIP cashback program for Roobet.com high rollers and whales.</desc>
+  <title id="ogTitle">Roobet Lossback - Up to 20% weekly lossback</title>
+  <desc id="ogDesc">Exclusive VIP lossback program for Roobet.com high rollers and whales.</desc>
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#070a13"/>
@@ -24,9 +24,9 @@
   <circle cx="950" cy="160" r="280" fill="url(#blob)"/>
   <circle cx="180" cy="500" r="240" fill="url(#blob2)"/>
   <rect x="60" y="60" width="140" height="36" rx="18" fill="#ff3358" fill-opacity="0.15" stroke="#ff3358" stroke-opacity="0.5" stroke-width="1.5"/>
-  <text x="130" y="84" text-anchor="middle" fill="#ff5470" font-family="'Bricolage Grotesque', Inter, system-ui, sans-serif" font-size="16" font-weight="600">VIP CASHBACK</text>
+  <text x="130" y="84" text-anchor="middle" fill="#ff5470" font-family="'Bricolage Grotesque', Inter, system-ui, sans-serif" font-size="16" font-weight="600">VIP LOSSBACK</text>
   <text x="60" y="220" fill="#ffffff" font-family="'Bricolage Grotesque', Inter, system-ui, sans-serif" font-size="68" font-weight="800">Roobet Lossback</text>
-  <text x="60" y="310" fill="url(#accent)" font-family="'Bricolage Grotesque', Inter, system-ui, sans-serif" font-size="52" font-weight="800">Up to 20% weekly cashback</text>
+  <text x="60" y="310" fill="url(#accent)" font-family="'Bricolage Grotesque', Inter, system-ui, sans-serif" font-size="52" font-weight="800">Up to 20% weekly lossback</text>
   <text x="60" y="380" fill="#cbd5e1" font-family="Manrope, Inter, system-ui, sans-serif" font-size="28" font-weight="500">Whales / High rollers / Crypto payouts / No wagering</text>
   <line x1="60" y1="420" x2="1100" y2="420" stroke="#2a3349" stroke-width="1.5"/>
   <text x="60" y="490" fill="#94a3b8" font-family="Manrope, Inter, system-ui, sans-serif" font-size="22" font-weight="600">Set up by Hugo - t.me/hugo_lossback_bot</text>

@@ -76,7 +76,7 @@ export default function AboutRoobet() {
               <br />Built For Players Who Bet Loud
             </h2>
             <p className="section-subheading mx-auto mt-4">
-              Before you accept a single cashback dollar, you should know exactly which platform
+              Before you accept a single lossback dollar, you should know exactly which platform
               your bankroll is going through — and why Roobet earned its reputation in the first place.
             </p>
           </div>
@@ -141,7 +141,7 @@ export default function AboutRoobet() {
             {[
               { icon: '🧮', title: 'Provably Fair Originals', desc: 'Crash, Mines, Towers, Plinko and Dice all expose their server-seed/client-seed pair so every outcome is verifiable post-roll. No room for opaque RNG.' },
               { icon: '🪙', title: '8 Crypto Networks Native', desc: 'BTC, ETH, USDT, USDC, LTC, SOL, TRX and DOGE settle directly. Withdrawals usually clear under 10 minutes once Hugo unlocks your VIP cashier limits.' },
-              { icon: '🎰', title: '4,000+ Games & Sportsbook', desc: 'Slots from Pragmatic, Nolimit City, Hacksaw; live tables from Evolution; a full sportsbook on the same wallet so cashback covers both verticals.' },
+              { icon: '🎰', title: '4,000+ Games & Sportsbook', desc: 'Slots from Pragmatic, Nolimit City, Hacksaw; live tables from Evolution; a full sportsbook on the same wallet so lossback covers both verticals.' },
               { icon: '🛡️', title: 'Curacao Licensed Operator', desc: 'Operated by Raw Entertainment N.V. under Antillephone licence — recognised throughout the crypto-gambling industry, with responsible-play tools built in.' },
             ].map((feature) => (
               <div key={feature.title} className="card tilt-card flex gap-4">
@@ -173,7 +173,7 @@ export default function AboutRoobet() {
 
         <Reveal>
           <h3 className="text-center text-lg font-semibold text-slate-300 mb-6 font-display">
-            Crypto rails supported on every cashback payout
+            Crypto rails supported on every lossback payout
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {cryptos.map((crypto) => (

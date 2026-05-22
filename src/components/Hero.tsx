@@ -73,7 +73,7 @@ export default function Hero() {
           className="mb-6 flex justify-center"
         >
           <span className="red-badge text-base px-5 py-2">
-            🦘 Roobet VIP Cashback — Whitelist Open This Week
+            🦘 Roobet VIP Lossback — Whitelist Open This Week
           </span>
         </motion.div>
 
@@ -83,12 +83,12 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.02] font-display"
         >
-          Reclaim Up To{' '}
-          <span className="text-roo-gradient">20% Of Your</span>
+          Up to{' '}
+          <span className="text-roo-gradient">20% Weekly Lossback</span>
           <br />
-          Roobet Losses —
+          on Roobet —
           <br />
-          <span className="text-roo-gradient">Every Single Week</span>
+          <span className="text-roo-gradient">Exclusive VIP Deal</span>
         </motion.h1>
 
         <motion.p
@@ -97,10 +97,10 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.25 }}
           className="mt-6 text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed"
         >
-          High-volume players on Roobet.com can now claw back as much as{' '}
-          <strong className="text-white">20% of their net weekly losses</strong> — crypto-paid,
-          zero rollover, no clawback clauses. It's the private cashback line Hugo opens for whales
-          who burn serious volume on Crash, Mines, Plinko and live tables.
+          High-volume players on Roobet.com can now receive as much as{' '}
+          <strong className="text-white">20% lossback on their net weekly losses</strong> — paid
+          in crypto, zero rollover, no take-back clauses. It's the private lossback line Hugo
+          opens for whales who burn serious volume on Crash, Mines, Plinko and live tables.
         </motion.p>
 
         <motion.div
@@ -118,7 +118,7 @@ export default function Hero() {
             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/>
             </svg>
-            Lock In My Roobet Cashback ↗
+            Claim My Deal
           </a>
           <a
             href="#how-it-works"
@@ -151,17 +151,15 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.7 }}
           className="mt-16 max-w-3xl mx-auto"
         >
-          <div className="relative rounded-2xl overflow-hidden border border-roobet-border shadow-[0_0_60px_rgba(255,51,88,0.18)]">
-            <div className="aspect-video bg-roobet-card flex items-center justify-center">
-              <iframe
-                src="https://www.youtube.com/embed/2Q1L_w_M9sI?autoplay=0&mute=1&controls=1&rel=0"
-                title="Roobet Casino Walkthrough"
-                className="w-full h-full"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                loading="lazy"
-              />
-            </div>
+          <div className="relative rounded-2xl overflow-hidden border border-roobet-border shadow-[0_0_60px_rgba(255,51,88,0.18)] bg-roobet-card">
+            <iframe
+              src="https://platform.twitter.com/embed/Tweet.html?id=2054369674306130333&theme=dark&hideCard=false&hideThread=true&dnt=true"
+              title="Roobet highlight clip"
+              className="w-full h-[680px] sm:h-[720px] block"
+              allow="autoplay; encrypted-media; picture-in-picture; web-share"
+              allowFullScreen
+              loading="lazy"
+            />
           </div>
           <p className="mt-3 text-sm text-slate-500 text-center">
             Roobet.com — crash, mines, crypto casino loved by the world's biggest streamers

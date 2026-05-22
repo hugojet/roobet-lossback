@@ -40,11 +40,11 @@ const steps = [
 ]
 
 const perks = [
-  { icon: '🏟️', title: 'Sportsbook + casino combined', desc: 'Cashback applies to net losses across both verticals on one wallet — rare in the industry, big upside if you hedge across slots, originals and live betting.' },
+  { icon: '🏟️', title: 'Sportsbook + casino combined', desc: 'Lossback applies to net losses across both verticals on one wallet — rare in the industry, big upside if you hedge across slots, originals and live betting.' },
   { icon: '🚫', title: 'Bet-cap relaxation', desc: 'Default per-bet limits get lifted for VIPs working with Hugo. Useful if you size up on Crash multipliers, Mines runs or single-leg sport plays.' },
   { icon: '🎁', title: 'Off-menu reload boosts', desc: 'Bespoke top-up bonuses negotiated case-by-case during cold streaks. These aren\'t in the public promo grid and aren\'t available through the standard cashier.' },
   { icon: '🛟', title: 'Priority cashier line', desc: 'Withdrawal stuck in review? Hugo pings the VIP desk directly. Typical resolution measured in hours, not days.' },
-  { icon: '📊', title: 'Sunday-night statement', desc: 'Every Sunday you receive a transparent breakdown: total wagered, returns paid, net loss, cashback rate applied, exact crypto amount due. No mystery, no math homework.' },
+  { icon: '📊', title: 'Sunday-night statement', desc: 'Every Sunday you receive a transparent breakdown: total wagered, returns paid, net loss, lossback rate applied, exact crypto amount due. No mystery, no math homework.' },
   { icon: '🤫', title: 'Discretion by default', desc: 'Your tier, your terms and your volume history stay between you and Hugo. Whale clients value privacy — Hugo respects it.' },
 ]
 
@@ -56,7 +56,7 @@ export default function TheDeal() {
           <div className="text-center mb-16">
             <span className="red-badge mb-4">The Mechanics</span>
             <h2 className="section-heading mt-2">
-              Inside Hugo's <span className="text-roo-gradient">Roobet Cashback</span> Programme
+              Inside Hugo's <span className="text-roo-gradient">Roobet Lossback</span> Programme
               <br />— From Handshake To Payout
             </h2>
             <p className="section-subheading mx-auto mt-4">
@@ -97,7 +97,7 @@ export default function TheDeal() {
               <div className="red-badge mb-4">Tier 1</div>
               <h4 className="text-2xl font-extrabold text-white mb-2 font-display">Big Player</h4>
               <div className="num text-3xl font-extrabold text-roo-gradient mb-1">10%</div>
-              <div className="text-slate-400 text-sm mb-6">Weekly net-loss rebate</div>
+              <div className="text-slate-400 text-sm mb-6">Weekly net-loss lossback</div>
               <div className="space-y-3 text-sm">
                 <div className="flex justify-between items-center py-2 border-b border-roobet-border/50">
                   <span className="text-slate-400">Monthly wager band</span>
@@ -108,16 +108,19 @@ export default function TheDeal() {
                   <span className="text-white font-semibold num">$4,500</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-roobet-border/50">
-                  <span className="text-slate-400">Weekly cashback (avg)</span>
+                  <span className="text-slate-400">Weekly lossback (avg)</span>
                   <span className="text-roobet-red-light font-bold num">~$112</span>
                 </div>
                 <div className="flex justify-between items-center py-2">
-                  <span className="text-slate-400">Annualised cashback</span>
+                  <span className="text-slate-400">Annualised lossback</span>
                   <span className="text-roobet-red-light font-bold num">~$5,400</span>
                 </div>
               </div>
               <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer" className="btn-secondary w-full mt-6 justify-center text-sm">
-                Apply as a Big Player
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/>
+                </svg>
+                Claim My Deal
               </a>
             </div>
 
@@ -129,7 +132,7 @@ export default function TheDeal() {
               <div className="red-badge mb-4">Tier 2</div>
               <h4 className="text-2xl font-extrabold text-white mb-2 font-display">Whale Tier 🐳</h4>
               <div className="num text-3xl font-extrabold text-roo-gradient mb-1">Up to 20%</div>
-              <div className="text-slate-400 text-sm mb-6">Weekly net-loss rebate</div>
+              <div className="text-slate-400 text-sm mb-6">Weekly net-loss lossback</div>
               <div className="space-y-3 text-sm">
                 <div className="flex justify-between items-center py-2 border-b border-roobet-border/50">
                   <span className="text-slate-400">Monthly wager band</span>
@@ -140,16 +143,19 @@ export default function TheDeal() {
                   <span className="text-white font-semibold num">$9,000</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-roobet-border/50">
-                  <span className="text-slate-400">Weekly cashback (avg)</span>
+                  <span className="text-slate-400">Weekly lossback (avg)</span>
                   <span className="text-roobet-red-light font-bold num">~$450</span>
                 </div>
                 <div className="flex justify-between items-center py-2">
-                  <span className="text-slate-400">Annualised cashback</span>
+                  <span className="text-slate-400">Annualised lossback</span>
                   <span className="text-roobet-red-light font-bold num">~$21,600</span>
                 </div>
               </div>
               <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer" className="btn-primary w-full mt-6 justify-center text-sm animate-red-pulse">
-                Apply for Whale Tier
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/>
+                </svg>
+                Claim My Deal
               </a>
             </div>
           </div>

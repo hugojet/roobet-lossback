@@ -67,20 +67,20 @@ export default function Calculator() {
   const [profile, setProfile] = useState<GameProfile>(profiles[0])
   const [tier, setTier] = useState<Tier>('big')
 
-  const cashbackPct = tier === 'whale' ? 0.20 : 0.10
+  const lossbackPct = tier === 'whale' ? 0.20 : 0.10
 
   const results = useMemo(() => {
     const monthlyLoss = monthlyWager * profile.rtpLossPct
-    const monthlyCashback = monthlyLoss * cashbackPct
-    const weeklyCashback = monthlyCashback / 4.33
-    const annualCashback = monthlyCashback * 12
-    const effectiveLoss = profile.rtpLossPct * (1 - cashbackPct) * 100
-    return { monthlyLoss, monthlyCashback, weeklyCashback, annualCashback, effectiveLoss }
-  }, [monthlyWager, profile, cashbackPct])
+    const monthlyLossback = monthlyLoss * lossbackPct
+    const weeklyLossback = monthlyLossback / 4.33
+    const annualLossback = monthlyLossback * 12
+    const effectiveLoss = profile.rtpLossPct * (1 - lossbackPct) * 100
+    return { monthlyLoss, monthlyLossback, weeklyLossback, annualLossback, effectiveLoss }
+  }, [monthlyWager, profile, lossbackPct])
 
-  const rollWeekly = useRollingNumber(results.weeklyCashback)
-  const rollMonthly = useRollingNumber(results.monthlyCashback)
-  const rollAnnual = useRollingNumber(results.annualCashback)
+  const rollWeekly = useRollingNumber(results.weeklyLossback)
+  const rollMonthly = useRollingNumber(results.monthlyLossback)
+  const rollAnnual = useRollingNumber(results.annualLossback)
   const rollLoss = useRollingNumber(results.monthlyLoss)
   const rollEffective = useRollingNumber(results.effectiveLoss)
 
@@ -91,7 +91,7 @@ export default function Calculator() {
           <div className="text-center mb-16">
             <span className="red-badge mb-4">Run The Numbers</span>
             <h2 className="section-heading mt-2">
-              Roobet Cashback Calculator — <span className="text-roo-gradient">See Your Weekly Return</span>
+              Roobet Lossback Calculator — <span className="text-roo-gradient">See Your Weekly Return</span>
             </h2>
             <p className="section-subheading mx-auto mt-4">
               Plug in your real monthly wager, pick the game mix you actually play, then watch the
@@ -156,7 +156,7 @@ export default function Calculator() {
               </div>
 
               <div>
-                <p className="text-slate-300 font-medium mb-3">Negotiated cashback tier</p>
+                <p className="text-slate-300 font-medium mb-3">Negotiated lossback tier</p>
                 <div className="grid grid-cols-2 gap-3">
                   <button
                     onClick={() => setTier('big')}
@@ -197,7 +197,7 @@ export default function Calculator() {
               <div className="card border-2 border-roobet-red/50 bg-roobet-red/5">
                 <h3 className="text-lg font-bold text-white mb-6 flex items-center gap-2 font-display">
                   <span className="w-8 h-8 rounded-lg bg-roobet-red/20 flex items-center justify-center text-roobet-red-light">🦘</span>
-                  Your cashback projection
+                  Your lossback projection
                 </h3>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center py-3 border-b border-roobet-border/40">
@@ -205,19 +205,19 @@ export default function Calculator() {
                     <span className="text-white font-bold text-lg num">{formatUSD(rollLoss)}</span>
                   </div>
                   <div className="flex justify-between items-center py-3 border-b border-roobet-border/40">
-                    <span className="text-slate-400">Weekly cashback ({(cashbackPct * 100).toFixed(0)}%)</span>
+                    <span className="text-slate-400">Weekly lossback ({(lossbackPct * 100).toFixed(0)}%)</span>
                     <span className="text-roobet-red-light font-extrabold text-xl num">{formatUSD(rollWeekly)}</span>
                   </div>
                   <div className="flex justify-between items-center py-3 border-b border-roobet-border/40">
-                    <span className="text-slate-400">Monthly cashback total</span>
+                    <span className="text-slate-400">Monthly lossback total</span>
                     <span className="text-roobet-gold font-extrabold text-xl num">{formatUSD(rollMonthly)}</span>
                   </div>
                   <div className="flex justify-between items-center py-3 border-b border-roobet-border/40">
-                    <span className="text-slate-400">Annual cashback projection</span>
+                    <span className="text-slate-400">Annual lossback projection</span>
                     <span className="text-roobet-red-light font-extrabold text-2xl num">{formatUSD(rollAnnual)}</span>
                   </div>
                   <div className="flex justify-between items-center py-3">
-                    <span className="text-slate-400">Effective edge after cashback</span>
+                    <span className="text-slate-400">Effective edge after lossback</span>
                     <span className="text-white font-bold text-lg num">
                       {rollEffective.toFixed(2)}%
                       <span className="text-xs text-roobet-red-light ml-1">(vs {(profile.rtpLossPct * 100).toFixed(1)}%)</span>
@@ -247,7 +247,10 @@ export default function Calculator() {
                 rel="noopener noreferrer"
                 className="btn-primary w-full justify-center"
               >
-                Open The Telegram Conversation ↗
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/>
+                </svg>
+                Claim My Deal
               </a>
             </div>
           </Reveal>

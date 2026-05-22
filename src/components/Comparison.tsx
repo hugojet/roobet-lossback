@@ -23,7 +23,7 @@ type Row = { feature: string; hugo: Cell; public: Cell; roo: Cell }
 
 const rows: Row[] = [
   {
-    feature: 'Headline cashback rate',
+    feature: 'Headline lossback rate',
     hugo: { value: 'Up to 20% weekly', highlight: true },
     public: { value: 'Promo only', highlight: false },
     roo: { value: '5%–8% at top tier', highlight: false },
@@ -53,7 +53,7 @@ const rows: Row[] = [
     roo: { value: '6 – 12 weeks to climb', highlight: false },
   },
   {
-    feature: 'Rollover on cashback',
+    feature: 'Rollover on lossback',
     hugo: { value: 'Zero', highlight: true },
     public: { value: '30× – 50× standard', highlight: false },
     roo: { value: 'Partial on tier bonuses', highlight: false },
@@ -171,7 +171,10 @@ export default function Comparison() {
             rel="noopener noreferrer"
             className="btn-primary text-lg"
           >
-            Talk To Hugo About The Whale Tier ↗
+            <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/>
+            </svg>
+            Claim My Deal
           </a>
         </Reveal>
       </div>

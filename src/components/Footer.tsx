@@ -4,7 +4,7 @@ const navLinks = [
   { href: '#home', label: 'Home' },
   { href: '#about-roobet', label: 'About Roobet' },
   { href: '#how-it-works', label: 'How It Works' },
-  { href: '#calculator', label: 'Cashback Calculator' },
+  { href: '#calculator', label: 'Lossback Calculator' },
   { href: '#the-math', label: 'The Maths' },
   { href: '#faq', label: 'FAQ' },
   { href: TELEGRAM_URL, label: 'Contact Hugo', external: true },
@@ -26,7 +26,7 @@ export default function Footer() {
               <span className="text-white font-extrabold text-lg font-display">roobet-lossback.com</span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
-              Negotiated cashback structures for serious Roobet.com players. Up to 20% of weekly
+              Negotiated lossback structures for serious Roobet.com players. Up to 20% of weekly
               net losses returned in crypto, with zero rollover, brokered by Hugo, authorised
               Roobet affiliate manager.
             </p>

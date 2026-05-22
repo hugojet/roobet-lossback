@@ -41,7 +41,7 @@ export default function FinalCTA() {
 
           <p className="text-slate-200 text-lg leading-relaxed mb-8">
             If you're regularly clearing $15,000+ in monthly wager on Roobet — across Crash,
-            Mines, slots or the sportsbook — every week you spend without a negotiated cashback
+            Mines, slots or the sportsbook — every week you spend without a negotiated lossback
             structure is a week of recoverable losses left on the table. That math doesn't change
             because you haven't sent the first message yet.
           </p>
@@ -63,7 +63,7 @@ export default function FinalCTA() {
               <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/>
               </svg>
-              Lock In My Roobet Cashback ↗
+              Claim My Deal
             </a>
           </div>
 

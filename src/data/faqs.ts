@@ -5,8 +5,8 @@ export const faqs = [
     a: `The percentage is negotiated case-by-case between Hugo and Roobet's VIP operations desk, based on three inputs: your verified monthly wager volume, the game mix you run (slots vs. originals vs. sportsbook each carry different blended edges), and the duration you intend to play under the structure. Players burning $15,000 to $150,000 per month typically land on the Big Player tier at 10%; volume above $150,000 unlocks the Whale Tier conversation, with rates negotiable up to 20% on net losses. Hugo presents the case to the VIP team — you don't have to argue your own rate.`,
   },
   {
-    q: 'Does the cashback include my Roobet sportsbook losses too?',
-    a: `Yes, that's one of the more valuable details of the deal. Most public Roobet rewards only count casino losses, but Hugo's structure can be configured to blend net losses across the sportsbook and the casino into a single weekly calculation. For players who hedge across slots, Crash, live tables and pre-match betting, this matters a lot — it means a brutal football Sunday is offset by the same cashback engine that covers a rough Crash session. Hugo confirms the included verticals during onboarding so there are no surprises in the first Monday statement.`,
+    q: 'Does the lossback include my Roobet sportsbook losses too?',
+    a: `Yes, that's one of the more valuable details of the deal. Most public Roobet rewards only count casino losses, but Hugo's structure can be configured to blend net losses across the sportsbook and the casino into a single weekly calculation. For players who hedge across slots, Crash, live tables and pre-match betting, this matters a lot — it means a brutal football Sunday is offset by the same lossback engine that covers a rough Crash session. Hugo confirms the included verticals during onboarding so there are no surprises in the first Monday statement.`,
   },
   {
     q: 'Are the Roobet originals (Crash, Mines, Plinko) eligible?',
@@ -22,15 +22,15 @@ export const faqs = [
   },
   {
     q: 'Is Hugo officially affiliated with Roobet?',
-    a: `Hugo operates an authorised Roobet campaign account inside the Roobet partner programme. This is a B2B relationship between Hugo and Raw Entertainment N.V. (Roobet's operating entity) — it's distinct from being a generic affiliate. Campaign managers in this programme have a direct relationship with the VIP operations desk and are explicitly authorised to negotiate cashback structures on behalf of their managed players. Hugo's authorisation can be confirmed by messaging the official Telegram bot at @hugo_lossback_bot and asking for verification details, which he supplies upfront.`,
+    a: `Hugo operates an authorised Roobet campaign account inside the Roobet partner programme. This is a B2B relationship between Hugo and Raw Entertainment N.V. (Roobet's operating entity) — it's distinct from being a generic affiliate. Campaign managers in this programme have a direct relationship with the VIP operations desk and are explicitly authorised to negotiate lossback structures on behalf of their managed players. Hugo's authorisation can be confirmed by messaging the official Telegram bot at @hugo_lossback_bot and asking for verification details, which he supplies upfront.`,
   },
   {
-    q: 'How is my cashback paid? Which crypto, when?',
-    a: `Cashback lands directly inside your Roobet account balance in your preferred cryptocurrency — Roobet supports Bitcoin, Ethereum, USDT, USDC, Litecoin, Solana, Tron and Dogecoin natively. Settlement happens every Monday, covering the previous Monday-through-Sunday window. Once it hits your balance you can withdraw to any compatible wallet at standard Roobet cashier speeds (typically under 10 minutes for major coins) with no additional wagering or holding requirement attached to the cashback amount itself.`,
+    q: 'How is my lossback paid? Which crypto, when?',
+    a: `Lossback lands directly inside your Roobet account balance in your preferred cryptocurrency — Roobet supports Bitcoin, Ethereum, USDT, USDC, Litecoin, Solana, Tron and Dogecoin natively. Settlement happens every Monday, covering the previous Monday-through-Sunday window. Once it hits your balance you can withdraw to any compatible wallet at standard Roobet cashier speeds (typically under 10 minutes for major coins) with no additional wagering or holding requirement attached to the lossback amount itself.`,
   },
   {
-    q: 'Are there any wagering or rollover conditions on the cashback?',
-    a: `None. This is the single most important structural difference between cashback under Hugo's deal and a standard deposit bonus. The cashback amount is credited as immediately-withdrawable cash balance in crypto. There is no rollover multiplier, no game restriction list, no minimum odds requirement, no maximum cash-out clause. You can withdraw the entire amount the same Monday it's paid out, redeploy it as new wager volume, or just hold it. There are no clawback clauses either — once it's paid, it's yours.`,
+    q: 'Are there any wagering or rollover conditions on the lossback?',
+    a: `None. This is the single most important structural difference between lossback under Hugo's deal and a standard deposit bonus. The lossback amount is credited as immediately-withdrawable cash balance in crypto. There is no rollover multiplier, no game restriction list, no minimum odds requirement, no maximum cash-out clause. You can withdraw the entire amount the same Monday it's paid out, redeploy it as new wager volume, or just hold it. There are no clawback clauses either — once it's paid, it's yours.`,
   },
   {
     q: 'Is this available in my country?',
@@ -42,7 +42,7 @@ export const faqs = [
   },
   {
     q: 'What happens if I have a big winning week — do I owe anything back?',
-    a: `No. Cashback is asymmetric on purpose: when you finish a week in profit, your net loss is zero or negative, and the cashback for that week is simply zero. There is no clawback against your winnings, no offset against future weeks, and no penalty mechanism for going positive. The next week's settlement starts cleanly from a fresh net-loss tally. The structure deliberately rewards you when you're down without penalising you when you're up — which is exactly why it pencils out for serious players over a multi-month horizon.`,
+    a: `No. Lossback is asymmetric on purpose: when you finish a week in profit, your net loss is zero or negative, and the lossback for that week is simply zero. There is no clawback against your winnings, no offset against future weeks, and no penalty mechanism for going positive. The next week's settlement starts cleanly from a fresh net-loss tally. The structure deliberately rewards you when you're down without penalising you when you're up — which is exactly why it pencils out for serious players over a multi-month horizon.`,
   },
 ]
 

@@ -21,7 +21,7 @@ function Reveal({ children, delay = 0, className = '' }: { children: React.React
   )
 }
 
-// Cumulative recovered cashback over a year, by tier × volume
+// Cumulative recovered lossback over a year, by tier × volume
 function buildAreaData() {
   return Array.from({ length: 12 }, (_, i) => {
     const m = i + 1
@@ -42,8 +42,8 @@ const radialData = [
   { name: 'No deal', value: 0, fill: '#475569' },
   { name: 'Public promo', value: 20, fill: '#94a3b8' },
   { name: 'Roo Rewards (top tier)', value: 35, fill: '#ff7849' },
-  { name: 'Cashback 10% (Big Player)', value: 50, fill: '#ff5470' },
-  { name: 'Cashback 20% (Whale)', value: 100, fill: '#ff3358' },
+  { name: 'Lossback 10% (Big Player)', value: 50, fill: '#ff5470' },
+  { name: 'Lossback 20% (Whale)', value: 100, fill: '#ff3358' },
 ]
 
 type AreaPayload = { name: string; value: number; color: string }
@@ -75,7 +75,7 @@ export default function Charts() {
           <div className="text-center mb-16">
             <span className="red-badge mb-4">The Maths</span>
             <h2 className="section-heading mt-2">
-              Cashback Compounds —{' '}
+              Lossback Compounds —{' '}
               <span className="text-roo-gradient">Why The Numbers Justify The Conversation</span>
             </h2>
             <p className="section-subheading mx-auto mt-4">
@@ -90,7 +90,7 @@ export default function Charts() {
           <Reveal>
             <div className="card h-full">
               <h3 className="text-xl font-bold text-white mb-2 font-display">
-                Twelve-month cumulative cashback
+                Twelve-month cumulative lossback
               </h3>
               <p className="text-slate-400 text-sm mb-6">
                 Stacked recovery curves across four representative wager/tier combinations,
@@ -182,7 +182,7 @@ export default function Charts() {
         <Reveal>
           <div className="card max-w-4xl mx-auto">
             <h3 className="text-xl font-bold text-white mb-4 font-display">
-              Why long-run cashback beats every other Roobet reward — the maths in plain language
+              Why long-run lossback beats every other Roobet reward — the maths in plain language
             </h3>
             <div className="space-y-4 text-slate-300 leading-relaxed">
               <p>
@@ -196,7 +196,7 @@ export default function Charts() {
                 Lossback flips the architecture. There is no rollover, no game restriction list,
                 no time pressure. If your monthly wager is $150,000 across slots and originals at
                 a 4% blended edge, your statistical loss expectation is roughly $6,000 per month.
-                A 20% Whale cashback wires $1,200 of that back unconditionally — equivalent to
+                A 20% Whale lossback wires $1,200 of that back unconditionally — equivalent to
                 playing on a{' '}
                 <strong className="text-white num">3.2% effective edge instead of 4%</strong>.
                 One simple percentage swap that, on this volume, compounds to roughly{' '}
@@ -208,7 +208,7 @@ export default function Charts() {
                 path (public promo, top-tier Roo Rewards, even a 10% Big Player rate) captures
                 only a fraction of what the negotiated 20% Whale structure makes available. The
                 area chart shows the same effect in dollars over time — by month twelve a
-                $400k/month Whale has accumulated more cashback than most players will ever earn
+                $400k/month Whale has accumulated more lossback than most players will ever earn
                 in raw winnings from a comparable bankroll.
               </p>
               <p>

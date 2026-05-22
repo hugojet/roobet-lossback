@@ -40,9 +40,9 @@ export default function WhatIsLossback() {
       <div className="section-container">
         <Reveal>
           <div className="text-center mb-16">
-            <span className="red-badge mb-4">Cashback 101</span>
+            <span className="red-badge mb-4">Lossback 101</span>
             <h2 className="section-heading mt-2">
-              Roobet Cashback Explained —{' '}
+              Roobet Lossback Explained —{' '}
               <span className="text-roo-gradient">The Deal Behind The Deal</span>
             </h2>
             <p className="section-subheading mx-auto mt-4">
@@ -58,7 +58,7 @@ export default function WhatIsLossback() {
             <div className="space-y-6 text-slate-300 leading-relaxed">
               <p className="text-lg">
                 A <strong className="text-white">Roobet lossback</strong> agreement is a private
-                cashback contract: a fixed share of whatever you lose over a defined window — almost
+                contract: a fixed share of whatever you lose over a defined window — almost
                 always seven calendar days — is wired back into your Roobet balance in
                 cryptocurrency. It is the highest-EV reward instrument Roobet operates, and it sits
                 permanently off the public marketing menu.
@@ -103,14 +103,14 @@ export default function WhatIsLossback() {
                   <p>
                     The public Roo Rewards programme hands out level-up bonuses, weekly boosts and
                     occasional rakeback at higher tiers. It's a fine baseline, but the meaningful
-                    cashback percentages only unlock for players who already produce
+                    lossback percentages only unlock for players who already produce
                     six-figure-monthly volume — and even then the ceiling tends to plateau around
                     5% to 8%. Lossback through a campaign manager bypasses that ramp entirely.
                   </p>
                 </div>
               </div>
               <p>
-                The <strong className="text-white">Roobet cashback deal</strong> Hugo brokers
+                The <strong className="text-white">Roobet lossback deal</strong> Hugo brokers
                 short-circuits the standard loyalty ramp. Because campaign managers negotiate
                 directly with Roobet's VIP operations team, you can land at the 15%–20% tier on
                 day one — no grinding twelve weeks of public Roo Rewards to prove worthiness.
@@ -134,12 +134,12 @@ export default function WhatIsLossback() {
             <div className="sticky top-8 space-y-8">
               <div className="card p-6 sm:p-8">
                 <h3 className="text-xl font-bold text-white mb-6 text-center font-display">
-                  How a Roobet cashback week settles
+                  How a Roobet lossback week settles
                 </h3>
                 <svg
                   viewBox="0 0 520 280"
                   className="w-full"
-                  aria-label="Horizontal money-flow diagram for Roobet weekly cashback settlement"
+                  aria-label="Horizontal money-flow diagram for Roobet weekly lossback settlement"
                 >
                   <defs>
                     <linearGradient id="flowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -178,12 +178,12 @@ export default function WhatIsLossback() {
                   <text x="260" y="245" textAnchor="middle" fill="#ffd166" fontSize="11" fontWeight="700">HUGO · CAMPAIGN MGR</text>
                   <text x="260" y="260" textAnchor="middle" fill="#94a3b8" fontSize="9">20% rate authorised</text>
 
-                  {/* Arrow Roobet -> Cashback (right) */}
+                  {/* Arrow Roobet -> Lossback (right) */}
                   <line x1="320" y1="140" x2="370" y2="140" stroke="url(#flowGrad)" strokeWidth="2.5" />
                   <polygon points="366,134 378,140 366,146" fill="#ff3358" />
-                  <text x="345" y="128" textAnchor="middle" fill="#ff7849" fontSize="9">cashback</text>
+                  <text x="345" y="128" textAnchor="middle" fill="#ff7849" fontSize="9">lossback</text>
 
-                  {/* Node 3: Cashback */}
+                  {/* Node 3: Lossback payout */}
                   <rect x="380" y="92" width="120" height="96" rx="14" fill="#ff3358" fillOpacity="0.12" stroke="#ff3358" strokeWidth="2" />
                   <text x="440" y="124" textAnchor="middle" fill="#ff5470" fontSize="13" fontWeight="800">$1,800</text>
                   <text x="440" y="142" textAnchor="middle" fill="#ffd166" fontSize="10" fontWeight="600">PAID BACK</text>
@@ -199,7 +199,7 @@ export default function WhatIsLossback() {
 
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { value: '0×', label: 'Rollover on cashback' },
+                  { value: '0×', label: 'Rollover on lossback' },
                   { value: '20%', label: 'Max negotiated rate' },
                   { value: '7d', label: 'Settlement window' },
                   { value: '8', label: 'Crypto networks paid' },
@@ -217,7 +217,7 @@ export default function WhatIsLossback() {
         {/* Comparison — rebuilt as stacked cards, NOT an HTML table */}
         <Reveal className="mt-20">
           <h3 className="text-2xl font-bold text-white mb-6 text-center font-display">
-            Cashback vs. bonus vs. rakeback vs. loyalty — head to head
+            Lossback vs. bonus vs. rakeback vs. loyalty — head to head
           </h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {compareCards.map((row) => (

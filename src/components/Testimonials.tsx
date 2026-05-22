@@ -29,7 +29,7 @@ type Testimonial = {
 
 const testimonials: Testimonial[] = [
   {
-    quote: `I'd been grinding Crash and Mines on Roobet for the better part of a year before a friend mentioned Hugo's set-up. Took maybe forty minutes from first message to "deal active starting Monday". My first cashback Monday hit $310 in USDT after a rough Sunday — felt like getting half a hand back. Now it's just part of the weekly rhythm.`,
+    quote: `I'd been grinding Crash and Mines on Roobet for the better part of a year before a friend mentioned Hugo's set-up. Took maybe forty minutes from first message to "deal active starting Monday". My first lossback Monday hit $310 in USDT after a rough Sunday — felt like getting half a hand back. Now it's just part of the weekly rhythm.`,
     username: 'J.M.',
     location: 'Toronto, Canada',
     flag: '🇨🇦',
@@ -38,7 +38,7 @@ const testimonials: Testimonial[] = [
     stars: 5,
   },
   {
-    quote: `Pure sportsbook player here — heavy on football parlays and tennis live. Most cashback structures don't even cover sportsbook losses, which was a deal-breaker every other time I looked into this. Hugo's whale-tier agreement includes my sportsbook book in the net-loss calc. That detail alone is worth two grand a month for me.`,
+    quote: `Pure sportsbook player here — heavy on football parlays and tennis live. Most lossback structures don't even cover sportsbook losses, which was a deal-breaker every other time I looked into this. Hugo's whale-tier agreement includes my sportsbook book in the net-loss calc. That detail alone is worth two grand a month for me.`,
     username: 'E.A.',
     location: 'Stockholm, Sweden',
     flag: '🇸🇪',
@@ -47,7 +47,7 @@ const testimonials: Testimonial[] = [
     stars: 5,
   },
   {
-    quote: `What I value is the transparency. Sunday night I get a clean PDF: total wagered, total returned, net loss, exact percentage applied, USDT amount. No "trust me" black box. After eight months on the deal my actual recovered cashback is within 1% of what Hugo originally projected. That kind of accuracy is rare.`,
+    quote: `What I value is the transparency. Sunday night I get a clean PDF: total wagered, total returned, net loss, exact percentage applied, USDT amount. No "trust me" black box. After eight months on the deal my actual recovered lossback is within 1% of what Hugo originally projected. That kind of accuracy is rare.`,
     username: 'R.G.',
     location: 'Monterrey, Mexico',
     flag: '🇲🇽',

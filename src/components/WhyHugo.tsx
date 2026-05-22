@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { TELEGRAM_URL, TELEGRAM_HANDLE } from '../seo/siteMeta'
+import { TELEGRAM_URL } from '../seo/siteMeta'
 
 function Reveal({ children, delay = 0, className = '' }: { children: React.ReactNode; delay?: number; className?: string }) {
   const ref = useRef(null)
@@ -21,8 +21,8 @@ function Reveal({ children, delay = 0, className = '' }: { children: React.React
 const advantages = [
   { icon: '🔗', title: 'Hard line to Roobet VIP ops', desc: 'Hugo doesn\'t hand-off to general support. He pings the Roobet VIP desk directly — cashier holds, account flags, deposit issues get sorted by name, not ticket queue.' },
   { icon: '🪪', title: 'Verified Roobet affiliate manager', desc: 'This is not a re-skinned referral link. Hugo runs an authorised campaign account inside the Roobet partner programme, which is what unlocks negotiated rate ceilings in the first place.' },
-  { icon: '🚀', title: 'Activation under 48 hours', desc: 'Forget twelve weeks of public-tier grinding. Once volume is verified, your cashback rate goes live the following Monday — most clients are settled within two business days.' },
-  { icon: '🧩', title: 'Rate tuned to your mix', desc: 'A pure sportsbook bettor and a Crash-only player don\'t need the same structure. Hugo negotiates the cashback rate, the included verticals and any bet-cap relaxations to match your real wagering pattern.' },
+  { icon: '🚀', title: 'Activation under 48 hours', desc: 'Forget twelve weeks of public-tier grinding. Once volume is verified, your lossback rate goes live the following Monday — most clients are settled within two business days.' },
+  { icon: '🧩', title: 'Rate tuned to your mix', desc: 'A pure sportsbook bettor and a Crash-only player don\'t need the same structure. Hugo negotiates the lossback rate, the included verticals and any bet-cap relaxations to match your real wagering pattern.' },
   { icon: '📈', title: 'Cap lifts on request', desc: 'Per-bet limits on originals and slots can be raised, in some cases removed entirely, for verified VIPs working under Hugo\'s book. Standard players never get this conversation.' },
   { icon: '🔁', title: 'Quarterly rate reviews', desc: 'Volume grows, your rate grows. Every quarter Hugo revisits the percentage with the VIP team — there is genuine upside in playing through one campaign manager long-term.' },
 ]
@@ -58,7 +58,7 @@ export default function WhyHugo() {
               <p className="text-slate-400 text-sm leading-relaxed mb-6">
                 Operator of an authorised Roobet campaign account with a direct line to the VIP
                 desk. Specialises in onboarding high-rolling Crash, originals and sportsbook
-                players under negotiated weekly cashback structures.
+                players under negotiated weekly lossback structures.
               </p>
               <div className="space-y-3 text-sm text-left">
                 <div className="flex items-center gap-3 text-slate-300">
@@ -87,7 +87,7 @@ export default function WhyHugo() {
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/>
                 </svg>
-                {TELEGRAM_HANDLE}
+                Claim My Deal
               </a>
             </div>
           </Reveal>
@@ -98,7 +98,7 @@ export default function WhyHugo() {
                 Tap a generic Roobet referral link and you land in exactly the same onboarding
                 bucket as a casual depositor — public welcome promo, public Roo Rewards ramp,
                 public support queue. There is no human reviewing your account, no one negotiating
-                on your behalf, and no path to a meaningful cashback percentage in your first
+                on your behalf, and no path to a meaningful lossback percentage in your first
                 ninety days.
               </p>
               <p>
@@ -110,7 +110,7 @@ export default function WhyHugo() {
               </p>
               <p>
                 For a player burning $200,000+ per month on Crash, slots and the sportsbook, the
-                gap between public-tier rewards (effectively a 4–6% blended rebate at best) and a
+                gap between public-tier rewards (effectively a 4–6% blended lossback at best) and a
                 negotiated 20% lossback works out to roughly{' '}
                 <strong className="text-white">$2,000–$3,000 of recovered net loss every single
                 week</strong>. Over a calendar year that's not a rounding error — it's a meaningful
