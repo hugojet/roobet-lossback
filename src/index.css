@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-roobet-dark text-white font-sans antialiased;
+    background-image:
+      radial-gradient(circle at 10% 0%, rgba(255, 51, 88, 0.08) 0%, transparent 40%),
+      radial-gradient(circle at 90% 100%, rgba(255, 209, 102, 0.05) 0%, transparent 45%);
+  }
+
+  * {
+    @apply border-roobet-border;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-8 py-4 bg-roobet-red text-white font-bold rounded-xl
+           hover:bg-roobet-red-light transition-all duration-200
+           shadow-red-glow hover:shadow-[0_0_44px_rgba(255,51,88,0.7)]
+           active:scale-95 font-display tracking-tight;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-8 py-4 border-2 border-roobet-red text-roobet-red-light font-bold rounded-xl
+           hover:bg-roobet-red hover:text-white transition-all duration-200
+           active:scale-95 font-display tracking-tight;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center gap-2 px-8 py-4 bg-roobet-gold text-roobet-darker font-bold rounded-xl
+           hover:bg-roobet-gold-dim transition-all duration-200
+           shadow-gold-glow active:scale-95 font-display tracking-tight;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-heading {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-display tracking-tight leading-[1.05];
+  }
+
+  .section-subheading {
+    @apply text-lg text-slate-400 mt-4 max-w-3xl leading-relaxed;
+  }
+
+  .card {
+    @apply bg-roobet-card border border-roobet-border rounded-2xl p-6 shadow-card;
+  }
+
+  .glass-card {
+    @apply bg-roobet-card/70 backdrop-blur-md border border-roobet-border rounded-2xl p-6 shadow-card;
+  }
+
+  .red-badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 bg-roobet-red/15 text-roobet-red-light border border-roobet-red/30 rounded-full text-sm font-semibold font-display;
+  }
+
+  .gold-badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 bg-roobet-gold/15 text-roobet-gold border border-roobet-gold/30 rounded-full text-sm font-semibold font-display;
+  }
+
+  .tilt-card {
+    @apply transition-transform duration-300 will-change-transform;
+  }
+  .tilt-card:hover {
+    transform: perspective(900px) rotateY(2deg) rotateX(-1.5deg) translateY(-3px);
+  }
+}
+
+@layer utilities {
+  .text-roo-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(120deg, #ff3358 0%, #ff7849 45%, #ffd166 100%);
+  }
+
+  .text-red-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-roobet-red to-roobet-red-light;
+  }
+
+  .glow-red {
+    filter: drop-shadow(0 0 14px rgba(255, 51, 88, 0.55));
+  }
+
+  .glow-gold {
+    filter: drop-shadow(0 0 14px rgba(255, 209, 102, 0.55));
+  }
+
+  .num {
+    @apply font-mono tabular-nums tracking-tight;
+  }
+}
+
+/* Mesh blob keyframes (background hero) */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.55;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+/* Crossfade carousel helper */
+.fade-enter { opacity: 0; }
+.fade-enter-active { opacity: 1; transition: opacity 400ms ease; }
+.fade-exit { opacity: 1; }
+.fade-exit-active { opacity: 0; transition: opacity 400ms ease; }
+
+/* Range slider — Roobet red */
+input[type="range"].roo-range {
+  -webkit-appearance: none;
+  appearance: none;
+  background: linear-gradient(90deg, #2a3349, #2a3349);
+  border-radius: 999px;
+  height: 6px;
+  outline: none;
+}
+input[type="range"].roo-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ff3358;
+  border: 3px solid #ffd166;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(255,51,88,0.5);
+}
+input[type="range"].roo-range::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ff3358;
+  border: 3px solid #ffd166;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(255,51,88,0.5);
+}
+
+/* Custom scrollbar — Roobet */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0e1421;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff3358, #ff7849);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffd166;
+}
+
+/* Recharts theme */
+.recharts-tooltip-wrapper .recharts-default-tooltip {
+  background-color: #1a2235 !important;
+  border: 1px solid #2a3349 !important;
+  border-radius: 12px !important;
+}
+
+/* Gold-shimmer animated gradient background */
+.gold-shimmer-bg {
+  background: linear-gradient(120deg,
+    rgba(255, 51, 88, 0.18) 0%,
+    rgba(255, 120, 73, 0.22) 35%,
+    rgba(255, 209, 102, 0.24) 65%,
+    rgba(255, 51, 88, 0.18) 100%);
+  background-size: 250% 250%;
+  animation: goldShimmer 10s ease infinite;
+}
+
+@keyframes goldShimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}

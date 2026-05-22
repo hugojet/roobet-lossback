@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://roobet-lossback.com/sitemap.xml
